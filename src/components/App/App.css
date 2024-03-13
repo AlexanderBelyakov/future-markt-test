@@ -1,0 +1,30 @@
+.app {
+  display: flex;
+  font-family: 'Raleway', 'Monserrat', Arial, sans-serif;
+}
+
+.app__overlay {
+  background-image: url("../../images/background.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(13px);
+  position: fixed;
+  z-index: -1;
+}
+
+.app::before {
+  content: "";
+  background-color: rgba(19, 52, 87, 0.87);
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.app__wrapper {
+  z-index: 1;
+}
