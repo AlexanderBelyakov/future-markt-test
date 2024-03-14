@@ -8,9 +8,9 @@ export function Header() {
         <header className="header">
             <img className="header__logo" src={logo} alt="Логотип"/>
             <Navigation />
-            <address class="header__address">
-                <img class="header__address-phone" src={phone} alt="Телефон"/>
-                <a class="header__address-link" href="tel:+83451233445">8-345-123-34-45</a>
+            <address className="header__address">
+                <img className="header__address-phone" src={phone} alt="Телефон"/>
+                <a className="header__address-link" href="tel:+83451233445">8-345-123-34-45</a>
             </address>
         </header>
     )

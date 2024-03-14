@@ -11,9 +11,8 @@
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
     line-height: 17.19px;
+    font-family: Montserrat;
 }
-
-
 
 @media (hover: hover) {
     .navigation__item:hover {
@@ -25,5 +24,6 @@
 @media (hover: none) {
     .navigation__item:active {
         background-color: white;
+        border-radius: 10px;
     }
 }
