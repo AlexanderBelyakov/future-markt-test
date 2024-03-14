@@ -1,0 +1,29 @@
+.navigation {
+    list-style: none;
+    display: flex;
+    max-width: 608px;
+    width: 608px;
+    justify-content: space-between;
+}
+
+.navigation__item {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    line-height: 17.19px;
+}
+
+
+
+@media (hover: hover) {
+    .navigation__item:hover {
+        opacity: .5;
+        transition: .3s ease-out;
+    }
+}
+
+@media (hover: none) {
+    .navigation__item:active {
+        background-color: white;
+    }
+}

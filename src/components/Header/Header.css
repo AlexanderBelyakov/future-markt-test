@@ -1,3 +1,39 @@
 .header {
-    z-index: ;
+    padding-top: 37px;
+    display: flex;
+    align-items: center;
+    width: 1320px;
+    justify-content: space-between;
 }
+
+.header__logo {
+    width: 169px;
+    height: 34px;
+}
+
+.header__address {
+    display: flex;
+    align-items: center;
+    width: 205px;
+    justify-content: space-between;
+    font-style: normal;
+}
+
+.header__address-phone {
+    width: 40px;
+    height: 40px;
+}
+
+.header__address-link {
+    font-weight: 600;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.header__address-link:hover {
+    opacity: .5;
+    transition: .3s ease-out;
+}
+
