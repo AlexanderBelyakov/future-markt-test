@@ -15,6 +15,10 @@
   z-index: -1;
 }
 
+.app__wrapper_opened {
+  filter: blur(8px);
+}
+
 .app::before {
   content: "";
   background-color: rgba(19, 52, 87, 0.87);
