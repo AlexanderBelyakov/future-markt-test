@@ -108,7 +108,6 @@
     display: inline-block;
     position: relative;
     padding-left: 48px;
-    line-height: 20px;
     cursor: pointer;
 }
 
@@ -128,7 +127,6 @@
 .popup__checkbox:checked+.popup__checkbox-label::after, 
 .popup__checkbox:not(:checked)+.popup__checkbox-label::after
 {
-    
     position: absolute;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -144,4 +142,90 @@
 
 .popup__checkbox:checked+.popup__checkbox-label::after {
     content: url('../../images/check.png');
+}
+
+@media (min-width: 320px) and (max-width: 612px) {
+    .popup {
+        width: 100%;
+    }
+
+    .popup__card {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .popup__close {
+        margin-top: 20px;
+        margin-right: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .popup__header {
+        max-width: 180px;
+        font-size: 20px;
+        line-height: 29.76px;
+    }
+
+    .popup__input {
+        font-size: 12px;
+        line-height: 14.74px;
+    }
+
+    .popup__checkbox-wrapper {
+        margin: 30px 0 55px;
+    }
+
+    .popup__checkbox:checked+.popup__checkbox-label, 
+    .popup__checkbox:not(:checked)+.popup__checkbox-label 
+    {
+        font-size: 12px;
+        line-height: 15.46px;
+        width: 167px;
+        opacity: .7;
+        padding-left: 30px;
+    }
+
+    .popup__checkbox:checked+.popup__checkbox-label::before, 
+    .popup__checkbox:not(:checked)+.popup__checkbox-label::before 
+    {
+        width: 15px;
+        height: 15px;
+    }   
+
+    .popup__checkbox:checked+.popup__checkbox-label::after, 
+    .popup__checkbox:not(:checked)+.popup__checkbox-label::after
+    {
+        left: -3px;
+        top: -4px;
+    }
+
+    .popup__button_free {
+        width: 251px;
+        height: 46px;
+        background-color: rgba(255, 255, 255, 0);
+        border: solid 1px rgba(255, 255, 255, 1);
+        font-size: 14px;
+        font-weight: 600;
+        color: rgba(7, 48, 93, 1);
+        line-height: 17.19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        cursor: pointer;
+    }
+
+    .popup__vector_free {
+        width: 13px;
+        height: 13px;
+        padding: 25px 8px 8px 23px;
+    }
+}
+
+@media (max-height: 739px) {
+    .popup__header {
+        font-size: 40px;
+        line-height: 40px;
+    }
 }

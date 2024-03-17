@@ -50,3 +50,22 @@
   left: 37.5%;
   z-index: 0;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .app__inner-lines {
+    width: 29%;
+  }
+
+  .app__wrapper {
+    min-width: 286px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .app__wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+}

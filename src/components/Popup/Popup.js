@@ -54,11 +54,11 @@ export function Popup({isOpen, onClose, confirmCallBack}) {
                         id="checkbox1"
                         required
                         />
-                        <label className="popup__checkbox-label" for="checkbox1">Согласен на сохранение и обработку персональных данных</label>
+                        <label className="popup__checkbox-label" htmlFor="checkbox1">Согласен на сохранение и обработку персональных данных</label>
                     </div>
-                    <button className="main__button main__button_free">
+                    <button className="main__button main__button_free  popup__button_free">
                         <p className="main__button-text main__button-text_free">Заказать обратный звонок</p>
-                        <img className="main__vector main__vector_free" src={vector2} alt="Ссылка"/>
+                        <img className="main__vector main__vector_free popup__vector_free" src={vector2} alt="Ссылка"/>
                     </button>
                 </form>
             </div>

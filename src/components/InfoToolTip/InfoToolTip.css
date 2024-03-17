@@ -33,3 +33,29 @@
     right: 0;
     bottom: 0;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .info__header {
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .info__text {
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+
+@media (max-height: 739px) {
+    .info__header {
+        font-size: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .info__text {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}

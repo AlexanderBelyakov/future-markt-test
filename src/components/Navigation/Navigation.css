@@ -27,3 +27,28 @@
         border-radius: 10px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .navigation {
+        background-image: url('../../images/menu.png');
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+
+    .navigation__item {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navigation__item {
+        font-size: 10px;
+        padding: 5px;
+    }
+}
