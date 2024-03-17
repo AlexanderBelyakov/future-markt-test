@@ -1,0 +1,61 @@
+.info__header {
+    font-weight: 600;
+    font-size: 50px;
+    margin: 0;
+    line-height: 78.9px;
+    max-width: 227px;
+    color: rgba(255, 255, 255, 1);
+    align-self: center;
+}
+
+.info__text {
+    font-weight: 600;
+    font-size: 40px;
+    margin: 0;
+    line-height: 58px;
+    max-width: 447px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    align-self: center;
+    padding-top: 98px;
+}
+
+.info__logo {
+    width: 169px;
+    height: 34px;
+    align-self: flex-end;
+    padding-top: 209px; 
+    padding-right: 40px;
+}
+
+.info__ellipse {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .info__header {
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .info__text {
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+
+@media (max-height: 739px) {
+    .info__header {
+        font-size: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .info__text {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}

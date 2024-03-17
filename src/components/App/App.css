@@ -1,0 +1,71 @@
+.app {
+  display: flex;
+  position: relative;
+  font-family: 'Raleway', 'Monserrat', Arial, sans-serif;
+}
+
+.app__overlay {
+  background-image: url("../../images/background.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(13px);
+  position: fixed;
+  z-index: -1;
+}
+
+.app__wrapper_opened {
+  filter: blur(8px);
+}
+
+.app::before {
+  content: "";
+  background-color: rgba(19, 52, 87, 0.87);
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.app__wrapper {
+  z-index: 1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px rgba(255, 255, 255, .08);
+  border-top: none;
+  border-bottom: none;
+}
+
+.app__inner-lines {
+  height: 100%;
+  width: 450px;
+  border: solid 1px rgba(255, 255, 255, .08);
+  border-top: none;
+  border-bottom: none;
+  position: absolute;
+  left: 37.5%;
+  z-index: 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .app__inner-lines {
+    width: 29%;
+  }
+
+  .app__wrapper {
+    min-width: 286px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .app__wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+}

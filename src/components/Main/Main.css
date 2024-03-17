@@ -1,0 +1,336 @@
+.main {
+    display: flex;
+    width: 1320px;
+}
+
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__header {
+    font-weight: 600;
+    font-size: 65px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    margin: 0;
+    max-width: 747px;
+    line-height: 87.94px;
+    padding-top: 175px;
+    padding-bottom: 43px;
+}
+
+.main__text {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 24px;
+    border-left: solid 1px rgba(255, 255, 255, 1);
+    padding-left: 24px;
+    max-width: 650px;
+}
+
+.main__buttons {
+    display: flex;
+    padding-top: 62px;
+}
+
+.main__button {
+    width: 380px;
+    height: 71px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(7, 48, 93, 1);
+    line-height: 22.1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.main__button_free {
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 1px rgba(255, 255, 255, 1);
+}
+
+.main__button-text {
+    padding-right: 45px;
+    position: relative;
+    left: 11px;
+    margin: 0;
+}
+
+.main__button-text_free {
+    padding-right: 67px;
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.main__vector {
+    width: 20px;
+    height: 20px;
+    border-left: solid 2px rgba(11, 52, 97, 1);
+    padding: 38px 0 13px 39px;
+}
+
+.main__vector_free {
+    border-left: solid 1px  rgba(255, 255, 255, 1);
+    padding-right: 0;
+    padding-left: 35px;
+}
+
+.main__info {
+    display: flex;
+    padding: 112px 0 43px;
+}
+
+.main__info-chunk {
+    height: 135px;
+    max-width: 202px;
+    border-left: solid 1px rgba(255, 255, 255, 0.61);
+    padding-left: 24px;
+}
+
+.main__info-chunk:nth-child(2n) {
+    margin-left: 225px;
+}
+
+.main__info-number {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 56.52px;
+    margin: 0;
+    color: rgba(255, 255, 255, 1);
+}
+
+.main__info-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.65px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    padding-top: 28px;
+    max-width: 170px;
+}
+
+.main__pictures {
+    display: flex;
+    position: relative;
+}
+.main__mentor {
+    max-width: 525px;
+    max-height: 808px;
+    position: relative;
+    left: 45px;
+    top: 58px;
+    z-index: 1;
+}
+
+.main__ellipse {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+@media (hover: hover) {
+    .main__button:hover {
+        opacity: .5;
+        transition: .3s ease-out;
+    }
+
+    .main__button_free:hover {
+        background-color: rgb(42, 158, 166);
+        opacity: 1;
+        transition: .3s ease-out;
+    }
+}
+
+@media (hover: none) {
+    .main__button:active {
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .main__button_free:active {
+        background-color: rgb(42, 158, 166);
+        opacity: 1;
+        transition: .3s ease-out;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .main {
+        width: 75%;
+        min-width: 286px;
+        margin: 0 auto;
+        border: solid 1px rgba(255, 255, 255, .08);
+        border-bottom: none;
+        border-top: none;
+
+    }
+
+    .main__ellipse {
+        display: none;
+    }
+
+    .main__header {
+        padding-top: 76px;
+        font-size: 25px;
+        width: 80vw;
+        line-height: 33.82px;
+        max-width: 300px;
+    }
+
+    .main__text {
+        font-size: 11px;
+        line-height: 16.5px;
+        padding-left: 6px;
+        width: 45vw;
+    }
+
+    .main__buttons {
+        flex-direction: column;
+        padding-top: 34px;
+    }
+
+    .main__button {
+       margin-top: 16px;
+       width: 126px;
+       height: 30px; 
+       font-size: 10px;
+       line-height: 12px;
+    }
+
+    .main__vector {
+        width: 8px;
+        height: 8px;
+        padding: 16px 5px 5px 14px;
+    }
+
+    .main__vector_free {
+        padding-left: 12px;
+    }
+
+    .main__button-text {
+        left: 25px;
+    }
+
+    .main__button-text_free {
+        padding-right: 22px;
+        margin-right: 0;
+        left: 12px;
+        white-space: nowrap;
+    }
+
+    .main__info{
+        padding-top: 92px;
+    }
+
+    .main__info-chunk {
+        height: 35px;
+        max-width: 87px;
+        border-left: solid 1px rgba(255, 255, 255, 0.61);
+        padding-left: 8px;
+    }
+    
+    .main__info-chunk:nth-child(2n) {
+        margin-left: 45px;
+    }
+
+    .main__info-number {
+        font-size: 16px;
+        line-height: 22.61px;
+        margin: 0;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .main__info-text {
+        font-size: 10px;
+        line-height: 12.28px;
+        color: rgba(255, 255, 255, 0.5);
+        margin: 0;
+        padding-top: 2px;
+        max-width: 170px;
+    }
+
+    .main__mentor {
+        width: 275px;
+        height: 432px;
+        left: -150px;
+        top: 130px;
+        z-index: -1;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .main {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .main__header {
+        padding-top: 76px;
+        font-size: 50px;
+        width: 80vw;
+        line-height: 55px;
+        max-width: 450px;
+    }
+
+    .main__text {
+        font-size: 15px;
+        line-height: 16.5px;
+        padding-left: 6px;
+        width: 45vw;
+    }
+
+    .main__buttons {
+        flex-direction: column;
+        padding-top: 34px;
+    }
+
+    .main__button {
+       margin-top: 16px;
+       width: 226px;
+       height: 40px; 
+       font-size: 10px;
+       line-height: 12px;
+    }
+
+    .main__vector {
+        width: 8px;
+        height: 8px;
+        padding: 25px 5px 5px 14px;
+    }
+
+    .main__vector_free {
+        padding-left: 12px;
+    }
+
+    .main__button-text {
+        left: 25px;
+    }
+
+    .main__button-text_free {
+        padding-right: 60px;
+        margin-right: 0;
+        left: 12px;
+        white-space: nowrap;
+    }
+
+    .main__ellipse {
+        display: none;
+    }
+
+    .main__mentor {
+        left: -150px;
+        top: 130px;
+        z-index: -1;
+    }
+}
